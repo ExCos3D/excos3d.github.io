@@ -1,0 +1,113 @@
+body {
+    background: rgba(0, 0, 0, 0) url('/src/background.png') center/cover no-repeat fixed;
+    background-blend-mode: overlay;
+    color: #e0e0e0;
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding-top: clamp(1vh, 3vh, 5vh);
+    margin-left: 1vh;
+    margin-right: 1vh;
+}
+
+.link {
+    width: 150px;
+    text-align: center;
+    padding: 14px 0;
+    border-radius: 10px;
+    background: rgba(15,15,15,0.9);
+    color: #00baff;
+    text-decoration: none;
+    border: 1px solid #00baff33;
+    box-shadow: 0 0 10px rgba(0,186,255,0.2);
+    transition: all 0.2s ease-out;
+}
+
+.link:hover {
+    background: rgba(0,186,255,0.42);
+    border-color: #00baff;
+    box-shadow: 0 0 18px rgba(0,186,255,0.45);
+    transform: scale(1.04);
+}
+
+#linklist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.content {
+    box-shadow: 0 0 16px rgba(0,186,255,0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    max-width: 800px;
+    border-radius: 12px;
+    margin: 1vh auto;
+    padding: 1vh;
+    background-color: rgba(0, 0, 0, 0.64);
+    min-width: 480px;
+}
+
+.header-img {
+    max-width: 420px;
+    min-width: 420px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 180px;
+    opacity: 0.64;
+    z-index: 2;
+}
+
+.footer-text {
+    position: relative;
+    z-index: 2;
+    color: #e0e0e0;
+}
+
+footer .content {
+    position: relative;
+    text-align: center;
+    padding-top: 76px;
+    padding-bottom: 60px;
+    /* border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.64);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 8% 100%);
+    box-shadow: 0 0 16px rgba(0,186,255,0.45);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    overflow: hidden; */
+}
+
+#titleheader {
+    text-align: center;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  #linklist {
+    column-gap: 16px;
+    row-gap: 12px;
+  }
+}
