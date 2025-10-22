@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <!-- Icons & Styles -->
-    <link rel="stylesheet" href="/linkhub_style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/src/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/src/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/src/favicons/favicon-16x16.png">
+    <link rel="stylesheet" href="/styles/excos-linkhub.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link 
         rel="stylesheet" 
@@ -13,38 +13,59 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous"
         referrerpolicy="no-referrer">
+    <link rel="license" href="https://excos3d.github.io/license.html">
+    <link rel="canonical" href="https://excos3d.github.io/">
 
     <!-- Meta -->
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; style-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data:; font-src https://cdnjs.cloudflare.com; object-src 'none'; base-uri 'none'; form-action 'none';">
+        content="default-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none';">
     <meta name="referrer" content="no-referrer">
     <meta name="robots" content="index, follow">
+    <meta name="license" content="https://excos3d.github.io/license.html">
 
     <!-- Site/Project-Info -->
     <title>ExCos3D | Link-Hub</title>
-    <meta name="description" content="ExCos3D - Link-Hub for socials. 3D printing, design, coding, and creative maker projects. Connect with MakerWorld, Printables, Twitch, Youtube, Github and more.">
+    <meta name="author" content="ExCos3D">
+    <meta name="description" content="Find all ExCos3D links in one place. Connect with MakerWorld, Twitch, Youtube, Github and more.">
     <meta name="keywords" content="3D printing, maker, ExCos3D, design, makerworld, printables, youtube, twitch, github, cults3d, thangs, instagram, excos, excos3d, ufo">
-    <meta property="og:title" content="ExCos3D - Link Hub">
-    <meta property="og:description" content="Find all ExCos3D links and maker platforms in one place.">
-    <meta property="og:image" content="https://excos3d.github.io/src/og-image-excos3d-logo.webp"> 
-    <meta property="og:type" content="website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#00baff">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="ExCos3D - Link Hub">
+    <meta property="og:description" content="Find all ExCos3D links in one place. Connect with MakerWorld, Twitch, Youtube, Github and more.">
+    <meta property="og:image" content="https://excos3d.github.io/assets/img/og-image-excos3d-logo.webp">
+    <meta property="og:url" content="https://excos3d.github.io/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ExCos3D — Link Hub">
+    <meta name="twitter:description" content="Find all ExCos3D links in one place. Connect with MakerWorld, Twitch, Youtube, Github and more.">
+    <meta name="twitter:image" content="https://excos3d.github.io/assets/img/og-image-excos3d-logo.webp">
+    <!-- <meta name="twitter:site" content="@ExCos3D"> -->
 
 </head>
 
 <body>
-    <header id="titleheader" class="content">
-        <img src="/src/linkhub-header.png" alt="ExCos3D header text image" class="header-img">
+    <header id="titleheader" class="content" aria-label="Main header-image containing 'ExCos3D - Link-HUB' written in the Audiowide font with ExCos3D-themed, cyan-colored styling.">
+        <img src="/assets/img/linkhub-header.png" alt="ExCos3D header text image" width="420" height="auto" class="header-img">
     </header>
 
-    <main id="content" class="content">
+    <nav id="main-nav" class="content" aria-label="Main navigation: Containing 2 Buttons for 'Home' & 'PGP'.">
+        <a href="/" class="active">Home</a>
+        <!-- <a href="/">PGP</a> -->
+        <!-- <a href="/">Test</a> -->
+    </nav>
+
+    <main id="content" class="content" aria-label="Main content section containing buttons linked to the social-media-platforms ExCos3D is using. (E.g. YouTube, Instagram).">
         <div id="linklist">
             <a 
                 class="link" 
-                href="https://makerworld.com/@exceder" 
                 aria-label="ExCos3D on MakerWorld"
+                href="https://makerworld.com/@exceder" 
+                rel="me"
                 target="_blank" 
                 rel="noopener noreferrer">
                 <i class="fa-solid fa-cube"></i><br>
@@ -52,8 +73,9 @@
             </a>
             <a 
                 class="link" 
-                href="https://instagram.com/excos3d" 
                 aria-label="ExCos3D on Instagram"
+                href="https://instagram.com/excos3d" 
+                rel="me"
                 target="_blank" 
                 rel="noopener noreferrer">
                 <i class="fa-brands fa-instagram"></i><br>
@@ -61,8 +83,9 @@
             </a>
             <a 
                 class="link" 
-                href="https://github.com/excos3d" 
                 aria-label="ExCos3D on GitHub"
+                href="https://github.com/excos3d" 
+                rel="me"
                 target="_blank" 
                 rel="noopener noreferrer">
                 <i class="fa-brands fa-github"></i><br>
@@ -70,8 +93,9 @@
             </a>
             <a 
                 class="link" 
-                href="https://printables.com/@ExCos3D_3650777" 
                 aria-label="ExCos3D on Printables"
+                href="https://printables.com/@ExCos3D_3650777" 
+                rel="me"
                 target="_blank" 
                 rel="noopener noreferrer">
                 <i class="fa-solid fa-cube"></i><br>
@@ -79,8 +103,9 @@
             </a>
             <a 
                 class="link" 
-                href="https://twitch.tv/excos3d" 
                 aria-label="ExCos3D on Twitch"
+                href="https://twitch.tv/excos3d" 
+                rel="me"
                 target="_blank" 
                 rel="noopener noreferrer">
                 <i class="fa-brands fa-twitch"></i><br>
@@ -88,8 +113,9 @@
             </a>
             <a 
                 class="link" 
-                href="" 
                 aria-label="ExCos3D's Discord Server"
+                href="#" 
+                rel="me"
                 target="_blank" 
                 rel="noopener noreferrer">
                 <i class="fa-brands fa-discord"></i><br>
@@ -97,8 +123,9 @@
             </a>
             <a 
                 class="link" 
-                href="https://cults3d.com/en/users/ExCos3D" 
                 aria-label="ExCos3D on Cults3D"
+                href="https://cults3d.com/en/users/ExCos3D" 
+                rel="me"
                 target="_blank" 
                 rel="noopener noreferrer">
                 <i class="fa-solid fa-shapes"></i><br>
@@ -106,8 +133,9 @@
             </a>
             <a 
                 class="link" 
-                href="https://youtube.com/@excos3d" 
                 aria-label="ExCos3D on YouTube"
+                href="https://youtube.com/@excos3d" 
+                rel="me"
                 target="_blank" 
                 rel="noopener noreferrer">
                 <i class="fa-brands fa-youtube"></i><br>
@@ -115,8 +143,9 @@
             </a>
             <a 
                 class="link" 
-                href="https://thangs.com/designer/ExCos3D" 
                 aria-label="ExCos3D on Thangs"
+                href="https://thangs.com/designer/ExCos3D" 
+                rel="me"
                 target="_blank" 
                 rel="noopener noreferrer">
                 <i class="fa-solid fa-box-open"></i><br>
@@ -125,26 +154,40 @@
         </div>
     </main>
 
-    <footer>
+    <footer aria-label="Site footer, containing a contact-link, a PGP-fingerprint, and transparency notice.">
         <div class="footer-wrapper">
             <div class="content">
-                <img src="/src/excos3d-ufo-logo.webp" alt="ExCos3D logo symbol. An UFO with a lightbeam" width="180" class="footer-logo">
-                <p class="footer-text">
-                    <a href="mailto:43056601+ExCos3D@users.noreply.github.com">Contact</a>
-                </p>
-                <div id="footer-pgp" class="footer-text" aria-live="polite">
-                    <span id="pgp-short" class="pgp-label" title="EFD6 D982 5D3D C976 EAA7 A378 58A7 35BB ECC7 AFC4">
-                        PGP Fingerprint:<br>
-                        58A7 35BB ECC7 AFC4
-                    </span>
+                <img src="/assets/img/excos3d-ufo-logo.webp" alt="ExCos3D logo symbol. An UFO with a lightbeam" width="180" class="footer-logo">
+                <address class="footer-text">
+                    <a href="mailto:43056601+ExCos3D@users.noreply.github.com" rel="me">
+                        Establish<br>Contact
+                    </a>    
+                </address>
+                <div id="footer-pgp" class="footer-text">
+                    <p>Home Coordinates:<br>
+                        <span id="pgp-short-verify" class="pgp-label" title="Verify: ─ EFD6 D982 5D3D C976 EAA7 A378 58A7 35BB ECC7 AFC4">58A7 35BB ECC7 AFC4</span><br>
+                        <span id="pgp-short-encrypt" class="pgp-label" title="Encrypt: ─ CC2C ED17 4178 9084 3EEF 1910 E9F4 7E30 5EE5 36B9">E9F4 7E30 5EE5 36B9</span><br>
+                        <span id="pgp-short-sign" class="pgp-label" title="Sign: ─ F8B0 E6B1 411B AE49 6C7E BEC6 543F 55FC B6D5 5DF0">543F 55FC B6D5 5DF0</span>
+                    </p>
+                    <hr class="sub">
+                    <!-- <pre class="pgp-tree">
+├┬ Master: ─ <span id="pgp-short-verify" class="pgp-label" title="Verify: EFD6 D982 5D3D C976 EAA7 A378 58A7 35BB ECC7 AFC4">58A7 35BB ECC7 AFC4</span>
+│├ Encrypt: ─ <span id="pgp-short-encrypt" class="pgp-label" title="Encrypt: CC2C ED17 4178 9084 3EEF 1910 E9F4 7E30 5EE5 36B9">E9F4 7E30 5EE5 36B9</span>
+│└ Sign: ─ <span id="pgp-short-sign" class="pgp-label" title="Sign: F8B0 E6B1 411B AE49 6C7E BEC6 543F 55FC B6D5 5DF0">543F 55FC B6D5 5DF0</span>
+                    </pre> -->
                 </div>
                 <p class="footer-text">
                     © 2025 ExCos3D. All rights reserved.
                 </p>
                 <p id="footer-legal" class="footer-text">
-                    This website does not use cookies, analytics, or external tracking services.<br>
-                    No personal data is collected, stored, or shared.<br>
-                    Hosted via <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a> under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Policy</a>.
+                    For license, data handling, and privacy details,<br>
+                    see the <a href="/license.html">License & Legal Notice</a><br>
+                </p>
+                <hr class="sub">
+                <p class="footer-text">
+                    Hosted via <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>
+                    under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
+                    target="_blank" rel="noopener noreferrer">GitHub Privacy Policy</a>.
                 </p>
             </div>
         </div>

@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://excos3d.github.io/</loc>
-    <lastmod>2025-10-20</lastmod>
+    <lastmod>2025-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://excos3d.github.io/assets/img/og-image-excos3d-logo.png</image:loc>
+      <image:caption>ExCos3D Link-Hub — Central connection point for platforms</image:caption>
+      <image:license>https://excos3d.github.io/license.html</image:license>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://excos3d.github.io/license.html</loc>
+    <lastmod>2025-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+    <image:image>
+      <image:loc>https://excos3d.github.io/assets/img/og-image-excos3d-logo.png</image:loc>
+      <image:caption>ExCos3D Link-Hub — License &amp; Legal Notice</image:caption>
+      <image:license>https://excos3d.github.io/license.html</image:license>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://excos3d.github.io/pgp.html</loc>
+    <lastmod>2025-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://excos3d.github.io/assets/img/og-image-excos3d-logo.png</image:loc>
+      <image:caption>ExCos3D Link-Hub — Authenticity &amp; PGP Verification</image:caption>
+      <image:license>https://excos3d.github.io/license.html</image:license>
+    </image:image>
   </url>
 </urlset>
