@@ -186,9 +186,11 @@ footer .content {
 }
 
 .pgp-tree {
-    display: block;
+    display: inline-block;
     font-family: 'Exo 2';
     text-align: left;
+    font-family:monospace;
+    font-size: 1.4em;
 }
 
 /* ╔═════════════════════════════╗ */
